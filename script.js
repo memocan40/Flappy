@@ -13,6 +13,10 @@ hole.addEventListener("animationiteration",()=>{
 setInterval(() => {
     var characterpos = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     character.style.top=(characterpos+3)+"px";
+    if(characterpos>450){
+        alert("game over");
+        character.style.top=100+"px";
+    }
 }, 10);
 
 
@@ -22,6 +26,10 @@ let jumpcounter=0;
 var jumpinterval = setInterval(() => {
     var characterpos = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     character.style.top=(characterpos-5)+"px";
+
+    if(jumpcounter>20){
+        clearInterval(jumpinterval);
+    }
     jumpcounter++;
 }, 10);
 }
