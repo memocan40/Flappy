@@ -37,3 +37,12 @@ body{
     top:-400px;
     animation: block 4s infinite;
 }
+
+
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top:100px;
+}
