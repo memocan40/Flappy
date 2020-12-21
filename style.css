@@ -1,7 +1,9 @@
-body{
+*{
     margin:0px;
     padding:0px;
     overflow: hidden;
+    background-color: black;
+    
 }
 
 
@@ -12,13 +14,17 @@ body{
     border: 3px solid black;
     margin: auto;
     overflow: hidden;
+    background-image:url(https://i.gifer.com/MDg8.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
 }
 
 
 #block{
     width: 50px;
     height: 500px;
-    background-color: black;
+    background-image:url(https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,f_auto,fl_progressive,h_533,q_auto,w_800/v1479371023/article/R10961_image1);
     position: relative;
     left: 400px;
     animation:block 4s infinite;
@@ -31,7 +37,8 @@ body{
 #hole{
     width: 50px;
     height: 150px;
-    background-color: white;
+    background-image: url(https://i.gifer.com/MDg8.gif);
+    background-size: 30em;
     position: relative;
     left: 400px;
     top:-400px;
@@ -42,7 +49,11 @@ body{
 #character{
     width: 20px;
     height: 20px;
-    background-color: black;
     position: absolute;
     top:100px;
+    background-image:url("https://i.pinimg.com/originals/22/d2/db/22d2dbe64acdd55a38980e5267a39a1b.gif");
+    background-size: cover;
+    background-color: transparent;
 }
+
+img{width: 600px;}
